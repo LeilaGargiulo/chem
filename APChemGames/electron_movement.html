@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Electron Movement Visualization</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    #canvas {
+      border: 1px solid black;
+      display: block;
+      margin: 20px auto;
+      background-color: #fff;
+    }
+    #elementInfo {
+      width: 80%;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #e3f2fd;
+      border: 1px solid #90caf9;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+      color: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Electron Movement Visualization</h1>
+  <label for="elementDropdown">Select Element:</label>
+  <select id="elementDropdown">
+    <option value="Hydrogen">Hydrogen</option>
+    <option value="Helium">Helium</option>
+    <option value="Lithium">Lithium</option>
+    <option value="Beryllium">Beryllium</option>
+    <option value="Boron">Boron</option>
+    <option value="Carbon">Carbon</option>
+    <option value="Nitrogen">Nitrogen</option>
+    <option value="Oxygen">Oxygen</option>
+    <option value="Fluorine">Fluorine</option>
+    <option value="Neon">Neon</option>
+    <option value="Sodium">Sodium</option>
+    <option value="Magnesium">Magnesium</option>
+    <option value="Aluminium">Aluminium</option>
+    <option value="Silicon">Silicon</option>
+    <option value="Phosphorus">Phosphorus</option>
+    <option value="Sulfur">Sulfur</option>
+    <option value="Chlorine">Chlorine</option>
+    <option value="Argon">Argon</option>
+    <option value="Potassium">Potassium</option>
+    <option value="Calcium">Calcium</option>
+    <!-- Extend this list to include all 118 elements as desired -->
+  </select>
+  <canvas id="canvas" width="400" height="400"></canvas>
+  <div id="elementInfo">
+    Select an element to see its details.
+  </div>
+  <script src="js/electron_movement.js"></script>
+</body>
+</html>

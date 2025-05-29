@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AP Chem Drag & Drop Trivia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    #answersList li {
+      padding: 8px;
+      margin: 5px;
+      background-color: #ddd;
+      cursor: move;
+      list-style-type: none;
+    }
+    #dropZone {
+      margin-top: 20px;
+      padding: 20px;
+      border: 2px dashed #aaa;
+      text-align: center;
+      background-color: #fff;
+    }
+    #progressBarContainer {
+      width: 80%;
+      background-color: #eee;
+      margin: 20px auto;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    #progressBar {
+      height: 20px;
+      width: 0%;
+      background-color: #4caf50;
+    }
+    #progressText {
+      text-align: center;
+      margin-top: 5px;
+    }
+    #nextQuestion {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 1em;
+      display: none;
+      cursor: pointer;
+      background-color: #2196f3;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>AP Chem Drag and Drop Trivia</h1>
+  
+  <label for="unitDropdown">Select Chemistry Unit:</label>
+  <select id="unitDropdown">
+    <option value="stoichiometry">Stoichiometry</option>
+    <option value="thermodynamics">Thermodynamics</option>
+    <option value="organic">Organic Chemistry</option>
+    <option value="equilibrium">Chemical Equilibrium</option>
+  </select>
+  
+  <div id="gameContainer">
+    <div id="questionContainer">
+      <p id="questionText">Drag the correct answer to the question below:</p>
+      <div id="questionArea">Question will load here.</div>
+    </div>
+    <ul id="answersList"></ul>
+    <div id="dropZone" class="droppable">Drop your answer here.</div>
+    <div id="progressBarContainer">
+      <div id="progressBar"></div>
+    </div>
+    <p id="progressText">Question 0 of 0</p>
+    <button id="nextQuestion">Next Question</button>
+  </div>
+  
+  <script src="js/drag_drop_trivia.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AP Chem Study Summaries</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      /* Additional styling specifically for the summary page */
+      .summary-container {
+          margin-bottom: 30px;
+          padding: 20px;
+          background-color: #fafafa;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AP Chemistry Study Summaries</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="drag_drop_trivia.html">Trivia</a></li>
+            <li><a href="electron_movement.html">Electron Movement</a></li>
+            <li><a href="flappy_glucose.html">Flappy Glucose</a></li>
+        </ul>
+    </nav>
+    <div id="unitsContainer">
+        <div class="summary-container" id="summaryDisplay">
+            <p>Please select a unit to view its summary.</p>
+        </div>
+        <div id="unitButtons" style="text-align: center;">
+            <button class="unit-btn" data-unit="stoichiometry">Stoichiometry</button>
+            <button class="unit-btn" data-unit="thermodynamics">Thermodynamics</button>
+            <button class="unit-btn" data-unit="organic">Organic Chemistry</button>
+            <button class="unit-btn" data-unit="equilibrium">Chemical Equilibrium</button>
+        </div>
+    </div>
+    <script src="js/study_summary.js"></script>
+</body>
+</html>

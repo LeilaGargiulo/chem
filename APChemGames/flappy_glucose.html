@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Flappy Glucose</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    canvas {
+      background-color: #a3d5ff;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+      <h1>Flappy Glucose</h1>
+  </header>
+  <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="drag_drop_trivia.html">Trivia</a></li>
+          <li><a href="electron_movement.html">Electron Movement</a></li>
+          <li><a href="study_summary.html">Summaries</a></li>
+      </ul>
+  </nav>
+  <div id="gameContainer">
+      <canvas id="gameCanvas" width="400" height="600"></canvas>
+  </div>
+  <div id="scoreContainer" style="text-align:center; margin-top:10px;">
+      <p id="scoreDisplay">Score: 0</p>
+      <button id="restartButton" style="display:none;">Restart Game</button>
+  </div>
+  <div id="photosynthesisEssay" class="unit-summary">
+      <h2 class="section-title">Understanding Photosynthesis</h2>
+      <p>
+      Photosynthesis is the remarkable biological process by which plants, algae, and certain bacteria convert the energy of sunlight into chemical energy. This process, which occurs primarily within the chloroplasts of plant cells, begins as chlorophyll absorbs sunlight—most strongly in the blue and red wavelengths. The absorbed energy splits water molecules into hydrogen and oxygen, releasing electrons that are transferred through a series of proteins in the thylakoid membranes. As this electron transport chain operates, it produces the energy-rich compounds ATP and NADPH. These molecules then power the Calvin cycle, wherein carbon dioxide is fixed—combined with other compounds—to synthesize glucose, a vital energy source. The glucose produced may be used immediately by the plant or stored for later use. Simultaneously, oxygen is an unwanted by-product for the plant but becomes essential for the respiration of nearly all other living organisms. The delicate balance achieved during photosynthesis underpins the entirety of life on Earth. Not only does this process provide the primary energy source for nearly all food webs, but it also regulates atmospheric oxygen levels, making it fundamental to the evolution of complex life forms. In its multitude of forms, photosynthesis reveals nature’s ingenuity—a system that transforms light into chemical energy with remarkable efficiency. This process is not only essential in natural ecosystems but also inspires technological innovations in solar energy capture and conversion, as researchers seek to mimic the elegance of photosynthesis in sustainable energy initiatives.
+      </p>
+  </div>
+  <script src="js/flappy_glucose.js"></script>
+</body>
+</html>
